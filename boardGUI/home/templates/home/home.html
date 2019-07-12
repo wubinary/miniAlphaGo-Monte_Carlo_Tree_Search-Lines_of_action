@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="static/home/style/board.css">
+    <link rel="stylesheet" type="text/css" href="static/home/style/bootstrap.min.css">
+    <script type="text/javascript" src="static/home/script/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+    $.ajaxSetup({
+        data: { csrfmiddlewaretoken: '{{ csrf_token }}' },
+    });
+    </script>
+    <script type="text/javascript" src="static/home/script/board.js"></script>
+</head>
+
+<body onload="drawRect()">
+    <div>
+        <canvas width="320" id="canvas" onmousedown="play(event)" height="320">你的瀏覽器不支持HTML5 canvas ，請使用 google chrome 瀏覽器 打開.
+        </canvas>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!--面板-->
+            <div class="col-sm-3">
+                <h2 id="turn">turn: BLACK</h2>
+            </div>
+            <div class="col-sm-3">
+                <h4 id="downCounter"></h4>
+            </div>
+        </div>
+        <div class="row">
+            <!--按鍵 AI_B on/off-->
+            <div class="col-sm-6">
+                <h3>Black AI</h3>
+                <button class="btn_ai_on_off" id="ai_on_off_B" onmousedown="AI_on_off('B')">OFF</button>
+            </div>
+        </div>
+        <div class="row">
+            <!--按鍵 AI_W on/off-->
+            <div class="col-md-6">
+                <h3>White AI</h3>
+                <button class="btn_ai_on_off" id="ai_on_off_W" onmousedown="AI_on_off('W')">OFF</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

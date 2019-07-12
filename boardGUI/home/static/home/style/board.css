@@ -1,0 +1,14 @@
+body {
+    margin: 10px;
+}
+
+/*按鍵*/
+.btn_ai_on_off {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.btn_ai_on_off {background-color: #2196F3;} /* Blue */
+.btn_ai_on_off:hover {background: #0b7dda;}
