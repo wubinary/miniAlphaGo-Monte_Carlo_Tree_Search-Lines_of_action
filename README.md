@@ -1,6 +1,6 @@
 # miniAlphaGo-Monte_Carlo_Tree_Search-line_of_action
 ###### tags: `AI` `zju`
- [人工智能] 期中專題 miniAlphaGo 蒙地卡羅數搜索-集結棋
+ [人工智能] 期中專題 miniAlphaGo 蒙地卡羅樹搜索-集結棋
 
 ## 蒙地卡羅樹搜索演算法
 ### 4Step: (Selection、Expansion、Simulation、Backpropagation)
